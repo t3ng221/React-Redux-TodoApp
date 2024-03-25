@@ -10,6 +10,7 @@ export const todosSlice = createSlice({
       state.push(action.payload);
       localStorage.setItem("todos", JSON.stringify(state));
     },
+
     deleteTodo: (state, action) => {
       const index = state.findIndex((todo) => todo.id === action.payload);
       if (index !== -1) {

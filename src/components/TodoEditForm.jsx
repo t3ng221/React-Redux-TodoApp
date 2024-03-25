@@ -8,7 +8,7 @@ import {
   DialogTitle,
 } from "@material-ui/core";
 
-const TodoForm = ({ onSaveTodo }) => {
+const TodoEditForm = ({ onSaveTodo }) => {
   const [open, setOpen] = useState(false);
   const [todo, setTodo] = useState({
     title: "",
@@ -85,4 +85,4 @@ const TodoForm = ({ onSaveTodo }) => {
   );
 };
 
-export default TodoForm;
+export default TodoEditForm;
